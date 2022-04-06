@@ -1,0 +1,107 @@
+.features__list {
+  @extend %list-reset;
+
+  counter-reset: list-counter;
+}
+
+.features__item {
+  counter-increment: list-counter;
+
+  position: relative;
+
+  padding-left: 35px;
+  padding-right: 45px;
+  margin-bottom: 15px;
+
+  font-size: 10px;
+  font-weight: 400;
+  font-family: "Montserrat", sans-serif;
+
+  br {
+    display: none;
+  }
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  &::before {
+    content: '';
+
+    position: absolute;
+    left: 0;
+    top: 0;
+
+    display: block;
+    width: 24px;
+    height: 24px;
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  &::after {
+    content: "0" counter(list-counter) ".";
+
+    position: absolute;
+    right: 0;
+    top: 0;
+
+    font-family: "Montserrat", sans-serif;
+    font-weight: 900;
+    font-size: 20px;
+    line-height: 1;
+    color: $brand-mercury;
+  }
+}
+
+.features__item--phone::before {
+  background-image: url('../../public/images/ico-phone-active.svg');
+}
+
+.features__item--measure::before {
+  width: 21px;
+  background-image: url('../../public/images/ico-book.svg');
+}
+
+.features__item--contract::before {
+  width: 20px;
+  background-image: url('../../public/images/ico-man.svg');
+}
+
+.features__item--installation::before {
+  background-image: url('../../public/images/ico-repair.svg');
+}
+
+.features__item--works::before {
+  width: 19px;
+  background-image: url('../../public/images/ico-wifi-phone.svg');
+}
+
+.features__item--quality::before {
+  width: 26px;
+  background-image: url('../../public/images/ico-shake.svg');
+}
+
+@include tablet-size {
+
+  .features__item {
+    font-size: 14px;
+
+    br {
+      display: inline;
+    }
+  }
+}
+
+@include desktop-size {
+
+  .features__item {
+    margin-bottom: 20px;
+
+    br {
+      display: none;
+    }
+  }
+}

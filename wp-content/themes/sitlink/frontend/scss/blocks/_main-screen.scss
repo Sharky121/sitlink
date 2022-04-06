@@ -1,0 +1,106 @@
+.main-screen {
+  text-align: center;
+}
+
+.main-screen__container {
+  position: relative;
+
+  padding-bottom: 60px;
+
+  &::after {
+    content: "Скорость сигнала";
+
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
+    font-size: 100px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 800;
+    line-height: 1;
+    color: $brand-wild-sand;
+    white-space: nowrap;
+    text-transform: uppercase;
+    z-index: -1;
+  }
+}
+
+.main-screen__img {
+  margin-top: -30px;
+
+  text-align: right;
+}
+
+.main-screen__slogan {
+  margin: 20px 0;
+
+  font-size: 12px;
+  line-height: 1.2;
+}
+
+.main-screen__btn {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@include tablet-size {
+
+  .main-screen {
+    position: relative;
+    text-align: left;
+  }
+
+  .main-screen__slogan {
+    margin: 40px 0 20px 0;
+
+    font-size: 16px;
+  }
+
+  .main-screen__img {
+    position: absolute;
+    right: 0;
+
+    margin-top: -46px;
+
+    z-index: -1;
+
+    img {
+      width: 380px;
+      height: 250px;
+    }
+  }
+
+  .main-screen__container {
+    position: relative;
+
+    padding-bottom: 150px;
+
+    &::after {
+      padding-left: 30px;
+
+      font-size: 150px;
+
+      z-index: -2;
+    }
+  }
+}
+
+@include desktop-size {
+
+  .main-screen {
+    background-image: url('../../public/images/section-screen_bg.jpg');
+
+    background-repeat: no-repeat;
+    background-size: 81% auto;
+    background-position: right -92% center;
+  }
+
+  .main-screen__container {
+    padding-top: 115px;
+    padding-bottom: 190px;
+  }
+
+  .main-screen__img {
+    display: none;
+  }
+}

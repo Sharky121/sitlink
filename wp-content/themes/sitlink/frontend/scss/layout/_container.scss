@@ -1,0 +1,24 @@
+.container {
+  width: 100%;
+  max-width: $mobile-width;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+@include tablet-size {
+
+  .container {
+    max-width: $tablet-width;
+    padding-right: 30px;
+    padding-left: 30px;
+  }
+}
+
+@include desktop-size {
+
+  .container {
+    max-width: $desktop-width;
+  }
+}

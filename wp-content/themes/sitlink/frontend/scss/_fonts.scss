@@ -1,0 +1,81 @@
+@font-face {
+  font-family: "Cera";
+  font-style: normal;
+  font-weight: 300;
+  src: local("Cera"),
+       url("../fonts/CeraPro-Light.woff2"),
+       url("../fonts/CeraPro-Light.woff");
+}
+
+@font-face {
+  font-family: "Cera";
+  font-style: normal;
+  font-weight: 400;
+  src: local("CeraPro-Regular"),
+       url("../fonts/CeraPro-Regular.woff2"),
+       url("../fonts/CeraPro-Regular.woff");
+}
+
+@font-face {
+  font-family: "Cera";
+  font-style: italic;
+  font-weight: 400;
+  src: local("Cera"),
+       url("../fonts/CeraPro-RegularItalic.woff2"),
+       url("../fonts/CeraPro-RegularItalic.woff");
+}
+
+@font-face {
+  font-family: "Cera";
+  font-style: normal;
+  font-weight: 700;
+  src: local("Cera"),
+       url("../fonts/CeraPro-Bold.woff2"),
+       url("../fonts/CeraPro-Bold.woff");
+}
+
+@font-face {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Montserrat-Medium"),
+       url("../fonts/Montserrat-Regular.woff2"),
+       url("../fonts/Montserrat-Regular.woff");
+}
+
+@font-face {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  src: local("Montserrat-Medium"),
+       url("../fonts/Montserrat-Medium.woff2"),
+       url("../fonts/Montserrat-Medium.woff");
+}
+
+@font-face {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  src: local("Montserrat-Bold"),
+       url("../fonts/Montserrat-Bold.woff2"),
+       url("../fonts/Montserrat-Bold.woff");
+}
+
+@font-face {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 800;
+  src: local("Montserrat-ExtraBold"),
+       url("../fonts/Montserrat-ExtraBold.woff2"),
+       url("../fonts/Montserrat-ExtraBold.woff");
+}
+
+
+@font-face {
+  font-family: "Cera";
+  font-style: normal;
+  font-weight: 900;
+  src: local("Cera"),
+       url("../fonts/CeraPro-Black.woff2"),
+       url("../fonts/CeraPro-Black.woff");
+}

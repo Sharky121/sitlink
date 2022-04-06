@@ -1,0 +1,27 @@
+.footer-nav__list {
+  @extend %list-reset;
+
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.footer-nav__item {
+  margin-right: 15px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.footer-nav__link {
+  font-weight: 300;
+  font-size: 16px;
+  color: $brand-black;
+}
+
+@include desktop-size {
+
+  .footer-nav__list {
+    justify-content: flex-end;
+  }
+}

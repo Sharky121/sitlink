@@ -1,0 +1,25 @@
+$brand-white: #ffffff;
+$brand-black: #333333;
+$brand-green: #00d6a8;
+$brand-grey: #dadada;
+$brand-iceberg: #d3f0ea;
+$brand-mine-shaft: #212121;
+$brand-wild-sand: #f5f5f5;
+$brand-mercury: #e6e6e6;
+$brand-silver: #c9c9c9;
+
+// Screen Size
+$mobile-width: 320px;
+$tablet-width: 768px;
+$desktop-width: 1280px;
+
+$retina-dpi: 144dpi;
+$retina-dppx: 1.5dppx;
+
+// Z-index
+$mobile-nav: 999;
+$index-section-header: 1;
+
+// Buttons
+$button-primary: $brand-green;
+$button-disabled: $brand-wild-sand;

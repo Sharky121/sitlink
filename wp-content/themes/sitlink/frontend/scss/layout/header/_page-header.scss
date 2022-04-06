@@ -1,0 +1,132 @@
+.page-header {
+  height: 60px;
+
+  background-color: $brand-white;
+}
+
+.page-header__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 60px;
+}
+
+.page-header__mobile-callback {
+  position: relative;
+
+  display: block;
+  padding-right: 26px;
+
+  font-family: "Montserrat", sans-serif;
+  font-size: 8px;
+  font-weight: 700;
+  line-height: 1;
+  text-transform: uppercase;
+  color: $brand-black;
+
+  &::after {
+    content: '';
+
+    position: absolute;
+    top: 50%;
+    right: 0;
+
+    display: block;
+    width: 24px;
+    height: 24px;
+    margin-top: -13px;
+
+    background-image: url('../../public/images/ico-phone.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}
+
+.page-header__phone {
+  display: none;
+}
+
+.page-header__callback {
+  display: none;
+}
+
+@include tablet-size {
+
+  .page-header__mobile-callback {
+    padding-right: 30px;
+
+    font-size: 10px;
+
+    &::after {
+      margin-top: -14px;
+    }
+  }
+}
+
+@include desktop-size {
+
+  .page-header {
+    height: 74px;
+  }
+
+  .page-header__container {
+    height: 74px;
+  }
+
+  .page-header__logo {
+    margin-right: 50px;
+  }
+
+  .page-header__mobile-callback {
+    display: none;
+  }
+
+  .page-header__phone {
+    display: inline;
+    vertical-align: middle;
+    margin-left: auto;
+    margin-right: 20px;
+
+    font-size: 24px;
+    font-weight: 900;
+    line-height: 1;
+    color: $brand-black;
+  }
+
+  .page-header__callback {
+    position: relative;
+
+    display: inline-block;
+    vertical-align: middle;
+    padding: 12px 50px 12px 20px;
+
+    font-size: 16px;
+    text-transform: uppercase;
+    line-height: 1;
+    color: $brand-black;
+
+    border: 1px solid $brand-black;
+    border-radius: 5px;
+
+    &::after {
+      content: '';
+
+      position: absolute;
+      top: 50%;
+      right: 20px;
+
+      display: block;
+      width: 20px;
+      height: 20px;
+      margin-top: -10px;
+
+      background-image: url('../../public/images/ico-phone.svg');
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+
+      transform: rotate(135deg);
+    }
+  }
+}

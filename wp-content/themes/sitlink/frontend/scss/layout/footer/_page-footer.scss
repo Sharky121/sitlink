@@ -1,0 +1,89 @@
+.page-footer {
+  background-color: $brand-iceberg;
+}
+
+.page-footer__container {
+  padding: 25px 10px;
+}
+
+.page-footer__logo {
+  display: inline-block;
+  margin-bottom: 25px;
+
+  img {
+    vertical-align: middle;
+  }
+}
+
+.page-footer__nav {
+  margin-bottom: 25px;
+}
+
+.page-footer__info {
+  margin-top: 0;
+  margin-bottom: 25px;
+
+  font-size: 12px;
+}
+
+.page-footer__copyright {
+  margin: 0;
+
+  font-size: 10px;
+  font-weight: 700;
+  line-height: 1;
+  text-align: left;
+  text-transform: uppercase;
+  color: $brand-mine-shaft;
+
+  opacity: 0.5;
+
+  a {
+    display: inline-block;
+    vertical-align: middle;
+    margin-top: 10px;
+
+    color: inherit;
+    text-decoration: underline;
+  }
+}
+
+@include desktop-size {
+
+  .page-footer__container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+
+  .page-footer__logo {
+    width: 50%;
+  }
+
+  .page-footer__nav {
+    width: 50%;
+  }
+
+  .page-footer__info {
+    width: 50%;
+    margin-bottom: 0;
+    align-self: flex-end;
+  }
+
+  .page-footer__copyright {
+    width: 50%;
+    align-self: flex-end;
+
+    text-align: right;
+
+    a {
+      margin: 0;
+
+      vertical-align: baseline;
+    }
+
+    br {
+      display: none;
+    }
+  }
+}

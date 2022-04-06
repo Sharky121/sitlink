@@ -1,0 +1,17 @@
+.index-page__section {
+  margin-bottom: 20px;
+}
+
+@include tablet-size {
+
+  .index-page__section {
+    margin-bottom: 35px;
+  }
+}
+
+@include desktop-size {
+
+  .index-page__section {
+    margin-bottom: 60px;
+  }
+};

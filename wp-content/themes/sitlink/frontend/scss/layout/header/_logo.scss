@@ -1,0 +1,19 @@
+.logo__img {
+  vertical-align: middle;
+}
+
+@include tablet-size {
+
+  .logo__img {
+    width: 140px;
+    height: 35px;
+  }
+}
+
+@include desktop-size {
+
+  .logo__img {
+    width: 180px;
+    height: 45px;
+  }
+}

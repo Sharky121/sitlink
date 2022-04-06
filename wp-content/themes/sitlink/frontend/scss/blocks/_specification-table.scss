@@ -1,0 +1,41 @@
+.specification-table {
+  width: 100%;
+
+  table-layout: fixed;
+  border-collapse: collapse;
+  border: none;
+
+  font-family: "Montserrat", sans-serif;
+}
+
+.specification-table__td {
+  font-size: 10px;
+  vertical-align: top;
+
+  p {
+    margin: 0;
+  }
+
+  &:nth-child(1) {
+    width: 70%;
+
+    text-align: left;
+  }
+
+  &:nth-child(2) {
+    width: 30%;
+
+    text-align: right;
+  }
+}
+
+.specification-table__tr--total .specification-table__td {
+  padding-top: 15px;
+
+  vertical-align: middle;
+}
+
+.specification-table__tr--total .specification-table__td:nth-child(1) {
+  text-transform: uppercase;
+  color: $brand-green;
+}

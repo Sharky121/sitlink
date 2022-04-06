@@ -1,0 +1,166 @@
+.operators {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  height: 248px;
+}
+
+.operators__list {
+  @extend %list-reset;
+
+  text-align: right;
+}
+
+.operators__item {
+  position: relative;
+  z-index: 1;
+
+  margin-bottom: 10px;
+
+  &::before {
+    content: '';
+
+    position: absolute;
+    top: 50%;
+    left: -25px;
+
+    display: block;
+    width: 35px;
+    height: 1px;
+    margin-top: -0.5px;
+
+    background-color: $brand-grey;
+  }
+
+  &::after {
+    content: '';
+
+    position: absolute;
+    top: 50%;
+    left: 10px;
+
+    display: block;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    margin-top: -2.5px;
+
+    background-color: $brand-grey;
+  }
+}
+
+.operators__img {
+  vertical-align: middle;
+}
+
+.operators__station {
+  order: 1;
+
+  img {
+    vertical-align: middle;
+  }
+}
+
+.operators__list:nth-of-type(1) {
+  order: 2;
+}
+
+.operators__list:nth-of-type(2) {
+  order: 3;
+
+  .operators__item:last-child {
+    margin-bottom: 0;
+  }
+}
+
+@include tablet-size {
+
+  .operators {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: auto;
+  }
+
+  .operators__station {
+    order: 2;
+  }
+
+  .operators__list:nth-of-type(1) {
+    order: 1;
+
+    .operators__item::before {
+      left: auto;
+      right: -100px;
+
+      width: 75px;
+    }
+
+    .operators__item::after {
+      left: auto;
+      right: -25px;
+    }
+
+    .operators__item:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  .operators__list:nth-of-type(2) {
+    order: 3;
+
+    .operators__item::before {
+      left: -100px;
+
+      width: 75px;
+    }
+
+    .operators__item:after {
+      left: -25px;
+    }
+  }
+
+  .operators__img {
+    width: 149px;
+    height: 56px;
+  }
+}
+
+@include desktop-size {
+
+  .operators__station {
+
+    img {
+      width: 304px;
+      height: 500px;
+    }
+  }
+
+  .operators__item {
+    margin-bottom: 20px;
+  }
+
+  .operators__img {
+    width: 300px;
+    height: 113px;
+  }
+
+  .operators__list:nth-of-type(1) {
+
+    .operators__item::before {
+      right: -135px;
+
+      width: 110px;
+    }
+  }
+
+  .operators__list:nth-of-type(2) {
+
+    .operators__item::before {
+      left: -135px;
+
+      width: 110px;
+    }
+  }
+}

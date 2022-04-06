@@ -1,0 +1,62 @@
+.how-to-item {
+  font-family: "Montserrat", sans-serif;
+}
+
+.how-to-item__title {
+  position: relative;
+
+  margin-top: 0;
+  margin-bottom: 15px;
+  padding-left: 30px;
+
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.2;
+
+  &::before {
+    content: '';
+
+    position: absolute;
+    left: 0;
+    top: 0;
+
+    width: 17px;
+    height: 17px;
+    margin-top: 4.5px;
+
+    border-radius: 50%;
+    background-color: $brand-silver;
+  }
+}
+
+.how-to-item__desc {
+  margin: 0;
+
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 1.2;
+}
+
+@include tablet-size {
+
+  .how-to-item__img {
+    width: 430px;
+    height: 346px;
+  }
+
+  .how-to-item__title {
+    margin-bottom: 20px;
+  }
+
+  .how-to-item__desc {
+    font-size: 14px;
+  }
+}
+
+@include desktop-size {
+
+  .how-to-item__img {
+    width: 614px;
+    height: 494px;
+  }
+}
