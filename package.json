@@ -1,0 +1,36 @@
+{
+  "name": "eco",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "watch": "webpack --watch",
+    "build": "webpack --mode=production"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Sharky121/ecoporolon.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Sharky121/ecoporolon/issues"
+  },
+  "homepage": "https://github.com/Sharky121/ecoporolon#readme",
+  "dependencies": {
+    "file-system": "^2.2.2",
+    "normalize.css": "^8.0.1",
+    "sweetalert2": "^11.4.4"
+  },
+  "devDependencies": {
+    "clean-webpack-plugin": "4.0.0",
+    "css-loader": "^6.3.0",
+    "html-webpack-plugin": "^5.5.0",
+    "mini-css-extract-plugin": "^2.4.4",
+    "node-sass": "^6.0.1",
+    "sass-loader": "^12.3.0",
+    "webpack": "^5.61.0",
+    "webpack-cli": "^4.9.1",
+    "webpack-dev-server": "^4.4.0"
+  }
+}
