@@ -20,7 +20,8 @@
   "dependencies": {
     "file-system": "^2.2.2",
     "normalize.css": "^8.0.1",
-    "sweetalert2": "^11.4.4"
+    "sweetalert2": "^11.4.8",
+    "swiper": "^8.0.7"
   },
   "devDependencies": {
     "clean-webpack-plugin": "4.0.0",

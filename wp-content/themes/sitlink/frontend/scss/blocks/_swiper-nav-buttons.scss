@@ -1,0 +1,16 @@
+.swiper-nav-buttons {
+  display: none;
+}
+
+@include tablet-size {
+
+  .swiper-nav-buttons {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+  }
+
+  .swiper-nav-buttons__prev {
+    margin-right: 10px;
+  }
+}

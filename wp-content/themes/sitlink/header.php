@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-  <title>Sitlink</title>
+  <title>Sotlink</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0">
   <meta name="format-detection" content="telephone=no">
@@ -33,7 +33,7 @@
               <a class="mobile-nav__link" href="">Услуги</a>
             </li>
             <li class="mobile-nav__item">
-              <a class="mobile-nav__link" href="">Типовые решения</a>
+              <a class="mobile-nav__link" href="#solutions">Типовые решения</a>
             </li>
             <li class="mobile-nav__item">
               <a class="mobile-nav__link" href="">Портфолио</a>
@@ -42,10 +42,10 @@
               <a class="mobile-nav__link" href="">Магазин</a>
             </li>
             <li class="mobile-nav__item">
-              <a class="mobile-nav__link" href="">Контакты</a>
+              <a class="mobile-nav__link" href="#contacts">Контакты</a>
             </li>
           </ul>
-          <a class="mobile-nav__phone" href="tel:4956644470">(495) 664-44-70</a>
+          <a class="mobile-nav__phone" href="tel:84955320920">(495) 532-09-20</a>
           <a class="mobile-nav__callback" href="">Перезвоните мне</a>
         </div>
       </nav>
@@ -58,7 +58,7 @@
             <a class="main-nav__link" href="">Услуги</a>
           </li>
           <li class="main-nav__item">
-            <a class="main-nav__link" href="">Типовые решения</a>
+            <a class="main-nav__link" href="#solutions">Типовые решения</a>
           </li>
           <li class="main-nav__item">
             <a class="main-nav__link" href="">Портфолио</a>
@@ -67,12 +67,12 @@
             <a class="main-nav__link" href="">Магазин</a>
           </li>
           <li class="main-nav__item">
-            <a class="main-nav__link" href="">Контакты</a>
+            <a class="main-nav__link" href="#contacts">Контакты</a>
           </li>
         </ul>
       </nav>
       <a class="page-header__mobile-callback" href="tel:">Звонок</a>
-      <a class="page-header__phone" href="tel:4956644470">(495) 664-44-70</a>
+      <a class="page-header__phone" href="tel:84955320920">(495) 532-09-20</a>
       <a class="page-header__callback" href="">Перезвоните мне</a>
     </div>
   </header>

@@ -32,6 +32,11 @@ import './frontend/images/yota-logo.png';
 import './frontend/images/station.jpg';
 import './frontend/images/object.jpg';
 import './frontend/images/home.png';
+import './frontend/images/pin.svg';
+import './frontend/images/ico-arrow.svg';
+import './frontend/images/product_1.jpg';
+import './frontend/images/product_2.jpg';
+import './frontend/images/product_3.jpg';
 
 // features icon
 import './frontend/images/ico-book.svg';

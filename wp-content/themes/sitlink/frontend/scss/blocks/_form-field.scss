@@ -1,0 +1,29 @@
+.form-field__input {
+  width: 100%;
+  padding: 10px 0;
+
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 1px solid $brand-green;
+
+  &:focus {
+    outline: none;
+  }
+}
+
+.form-field__textarea {
+  width: 100%;
+  padding: 10px 0;
+
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 1px solid $brand-green;
+
+  resize: none;
+
+  &:focus {
+    outline: none;
+  }
+}

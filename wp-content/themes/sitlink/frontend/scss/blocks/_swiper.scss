@@ -1,0 +1,25 @@
+.swiper {
+  position: static!important;
+  width: 100%;
+  padding: 10px 0!important;
+}
+
+.swiper__nav-buttons {
+  position: absolute;
+  top: 57px;
+  left: 240px;
+
+  z-index: 2;
+}
+
+.swiper-slide {
+  padding: 5px;
+}
+
+@include desktop-size {
+
+  .swiper__nav-buttons {
+    top: 62px;
+    left: 290px;
+  }
+}

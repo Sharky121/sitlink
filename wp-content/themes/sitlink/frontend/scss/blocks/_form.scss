@@ -1,0 +1,15 @@
+.form__list {
+  @extend %list-reset;
+}
+
+.form__item {
+  margin-bottom: 15px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.form__btn {
+  margin-top: 30px;
+}

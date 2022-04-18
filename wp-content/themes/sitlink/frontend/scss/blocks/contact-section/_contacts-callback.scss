@@ -1,0 +1,24 @@
+.contacts-callback {
+  max-width: 520px;
+}
+
+.contacts-callback__title {
+  margin-top: 0;
+  margin-bottom: 10px;
+
+  font-size: 20px;
+}
+
+.contacts-callback__subscribtion {
+  margin-top: 0;
+  margin-bottom: 20px;
+
+  font-size: 12px;
+}
+
+@include tablet-size {
+
+  .contacts-callback__subscribtion {
+    font-size: 16px;
+  }
+}

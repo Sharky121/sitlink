@@ -1,0 +1,27 @@
+.contacts__right {
+  display: none;
+}
+
+@include desktop-size {
+
+  .contacts__wrapper {
+    position: relative;
+
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+
+  .contacts__left {
+    width: 50%;
+  }
+
+  .contacts__right {
+    position: absolute;
+    top: 0;
+    left: 50%;
+
+    display: block;
+    width: 100%;
+  }
+}

@@ -1,5 +1,11 @@
+.how-to {
+  text-align: center;
+}
+
 .how-to__list {
   @extend %list-reset;
+
+  text-align: left;
 }
 
 .how-to__item {
@@ -7,6 +13,34 @@
 
   &:last-child {
     margin-bottom: 0;
+  }
+}
+
+.how-to__btn {
+  position: relative;
+
+  margin-top: 30px;
+
+  &::before,
+  &::after {
+    content: '';
+
+    position: absolute;
+    top: 50%;
+
+    width: 12%;
+    height: 1px;
+    margin-top: -0.5px;
+
+    background-color: $brand-grey;
+  }
+
+  &::before {
+    left: 0;
+  }
+
+  &::after {
+    right: 0;
   }
 }
 
@@ -49,6 +83,14 @@
     width: calc((100% - 60px) / 2);
     margin-right: 0;
   }
+
+  .how-to__btn {
+
+    &::before,
+    &::after {
+      width: 32%;
+    }
+  }
 }
 
 @include desktop-size {
@@ -82,5 +124,14 @@
   .how-to__item:nth-child(5) {
     width: 300px;
     margin-right: 0;
+  }
+
+  .how-to__btn {
+    margin-top: 75px;
+
+    &::before,
+    &::after {
+      width: 40%;
+    }
   }
 }

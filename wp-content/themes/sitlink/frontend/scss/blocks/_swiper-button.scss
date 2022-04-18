@@ -1,0 +1,17 @@
+.swiper-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+
+  color: $brand-green;
+  cursor: pointer;
+
+  border: 2px solid $brand-green;
+  border-radius: 50%;
+}
+
+.swiper-button--right .swiper-button__ico {
+  transform: rotate(180deg);
+}

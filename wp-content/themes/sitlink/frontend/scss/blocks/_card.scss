@@ -1,0 +1,35 @@
+.card {
+  max-width: 240px;
+  padding: 40px 20px 40px;
+
+  font-family: "Montserrat", sans-serif;
+
+  background-color: $brand-white;
+  box-shadow: 0 1px 50px rgba(0, 0, 0, 0.1);
+}
+
+.card__img {
+  width: 120px;
+  height: 120px;
+  margin-bottom: 20px;
+
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+.card__title {
+  margin-top: 0;
+  margin-bottom: 20px;
+
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.card__price {
+  margin: 0;
+
+  font-size: 14px;
+  font-weight: 400;
+}
