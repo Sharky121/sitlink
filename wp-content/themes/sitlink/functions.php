@@ -79,3 +79,5 @@ function sendForm() {
 	wp_mail($to, $subject, $body, $headers);
 	wp_die();
 }
+
+add_theme_support( 'post-thumbnails', array( 'post' ) );

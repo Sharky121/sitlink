@@ -95,6 +95,20 @@ const swiper = new Swiper('.swiper', {
     nextEl: '.swiper-nav-buttons__prev',
     prevEl: '.swiper-nav-buttons__next',
   },
+  breakpoints: {
+    480: {
+      slidesPerView: 2,
+      spaceBetween: 30
+    },
+    768: {
+      slidesPerView: 3,
+      spaceBetween: 40
+    },
+    1280: {
+      slidesPerView: 4,
+      spaceBetween: 40
+    }
+  }
 });
 
 console.log(swiper);

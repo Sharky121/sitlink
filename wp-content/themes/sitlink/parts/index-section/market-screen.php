@@ -6,34 +6,22 @@
 		</div>
     <div class="market-section__products swiper">
       <div class="swiper-wrapper">
-        <!-- Slides -->
-        <div class="swiper-slide">
-          <div class="card">
-            <div class="card__img">
-              <img src="<?php bloginfo('template_url'); ?>/public/images/product_1.jpg" alt="product">
-            </div>
-            <h3 class="card__title">VEGATEL VT-2 1800/3G(LED)</h3>
-            <p class="card__price">Цена: 43 100 ₽</p>
-          </div>
-        </div>
-        <div class="swiper-slide">
-          <div class="card">
-            <div class="card__img">
-              <img src="<?php bloginfo('template_url'); ?>/public/images/product_1.jpg" alt="product">
-            </div>
-            <h3 class="card__title">VEGATEL VT-2 1800/3G(LED)</h3>
-            <p class="card__price">Цена: 43 100 ₽</p>
-          </div>
-        </div>
-        <div class="swiper-slide">
-          <div class="card">
-            <div class="card__img">
-              <img src="<?php bloginfo('template_url'); ?>/public/images/product_1.jpg" alt="product">
-            </div>
-            <h3 class="card__title">VEGATEL VT-2 1800/3G(LED)</h3>
-            <p class="card__price">Цена: 43 100 ₽</p>
-          </div>
-        </div>
+	      <?php if (have_posts()) : query_posts(array('cat' => 3)); ?>
+		      <?php while (have_posts()) : the_post(); ?>
+			      <?php $thumbnail_attributes = wp_get_attachment_image_src( get_post_thumbnail_id(),'large'); ?>
+              <div class="swiper-slide">
+                <div class="card">
+                  <div class="card__img">
+                    <img src="<?php echo $thumbnail_attributes[0] ?>" alt="product">
+                  </div>
+                  <h3 class="card__title"><?php the_title(); ?></h3>
+                  <p class="card__price">Цена: <?php $post_id = get_the_ID();
+	                  echo get_post_meta( $post_id, 'price', 1); ?> ₽</p>
+                  <a href="<?php the_permalink(); ?>"></a>
+                </div>
+              </div>
+		      <?php endwhile; ?>
+	      <?php endif; wp_reset_query(); ?>
       </div>
 
       <div class="swiper__nav-buttons swiper-nav-buttons">
