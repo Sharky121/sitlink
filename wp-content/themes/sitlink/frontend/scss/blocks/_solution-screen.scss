@@ -1,0 +1,17 @@
+.solution-screen__container {
+  position: relative;
+}
+
+.solution-screen__swiper-nav-buttons {
+  top: 57px;
+  left: 560px;
+}
+
+@include desktop-size {
+
+  .solution-screen__swiper-nav-buttons {
+    top: 62px;
+    left: 565px;
+  }
+
+}

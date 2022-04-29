@@ -24,7 +24,7 @@
 	      <?php endif; wp_reset_query(); ?>
       </div>
 
-      <div class="swiper__nav-buttons swiper-nav-buttons">
+      <div class="market-section__swiper-nav-buttons swiper__nav-buttons swiper-nav-buttons">
         <div class="swiper-nav-buttons__prev swiper-button swiper-button--left">
           <svg class="swiper-button__ico" width="36" height="36" aria-hidden="true" focusable="false">
             <use xlink:href="#ico-left-arrow" x="0" y="0"/>

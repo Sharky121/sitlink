@@ -89,8 +89,7 @@ ymaps.ready(mapInit);
 
 const swiper = new Swiper('.swiper', {
   loop: true,
-  slidesPerView: 'auto',
-  spaceBetween: 30,
+  slidesPerView: 1,
   navigation: {
     nextEl: '.swiper-nav-buttons__prev',
     prevEl: '.swiper-nav-buttons__next',
@@ -98,15 +97,9 @@ const swiper = new Swiper('.swiper', {
   breakpoints: {
     480: {
       slidesPerView: 2,
-      spaceBetween: 30
-    },
-    768: {
-      slidesPerView: 3,
-      spaceBetween: 40
     },
     1280: {
       slidesPerView: 4,
-      spaceBetween: 40
     }
   }
 });

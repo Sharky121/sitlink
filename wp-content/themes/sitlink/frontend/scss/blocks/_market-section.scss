@@ -2,3 +2,15 @@
   position: relative;
 }
 
+.market-section__swiper-nav-buttons {
+  top: 57px;
+  left: 240px;
+}
+
+@include desktop-size {
+
+  .market-section__swiper-nav-buttons {
+    top: 62px;
+    left: 290px;
+  }
+}
