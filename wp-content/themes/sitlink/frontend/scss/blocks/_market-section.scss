@@ -7,6 +7,10 @@
   left: 240px;
 }
 
+.market-section__products.swiper {
+  padding-bottom: 11px;
+}
+
 @include desktop-size {
 
   .market-section__swiper-nav-buttons {

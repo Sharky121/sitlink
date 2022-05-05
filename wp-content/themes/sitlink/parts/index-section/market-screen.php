@@ -17,7 +17,12 @@
                   <h3 class="card__title"><?php the_title(); ?></h3>
                   <p class="card__price">Цена: <?php $post_id = get_the_ID();
 	                  echo get_post_meta( $post_id, 'price', 1); ?> ₽</p>
-                  <a href="<?php the_permalink(); ?>"></a>
+                  <a class="card__btn btn btn--primary" href="<?php the_permalink(); ?>">
+                    <span class="btn__text">Подробней</span>
+                    <svg class="btn__icon" width="20" height="20" aria-hidden="true" focusable="false">
+                      <use xlink:href="#ico-wifi" x="0" y="0"></use>
+                    </svg>
+                  </a>
                 </div>
               </div>
 		      <?php endwhile; ?>
