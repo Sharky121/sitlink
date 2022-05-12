@@ -41,30 +41,41 @@ NavElements.closeBtn.addEventListener('click', () => {
   NavElements.sidebar.classList.remove('mobile-nav--open');
 });
 
-callbackFormElement.addEventListener('submit', (evt) => {
-  evt.preventDefault();
+if (callbackFormElement) {
+  callbackFormElement.addEventListener('submit', (evt) => {
+    evt.preventDefault();
 
-  const formData = new FormData(evt.target);
+    const formData = new FormData(evt.target);
 
-  formData.append('action', 'contactUs');
+    formData.append('action', 'contactUs');
 
-  fetch(
-    '/wp-admin/admin-ajax.php',
-    {
-      method: 'POST',
-      body: formData,
-    },
-  )
-    .then((response) => {
-      if (response.ok) {
-        Swal.fire({
-          position: 'top-center',
-          icon: 'success',
-          title: 'Спасибо! Ваше сообщение отправлено.',
-          showConfirmButton: false,
-          timer: 1500
-        });
-      } else {
+    fetch(
+      '/wp-admin/admin-ajax.php',
+      {
+        method: 'POST',
+        body: formData,
+      },
+    )
+      .then((response) => {
+        if (response.ok) {
+          Swal.fire({
+            position: 'top-center',
+            icon: 'success',
+            title: 'Спасибо! Ваше сообщение отправлено.',
+            showConfirmButton: false,
+            timer: 1500
+          });
+        } else {
+          Swal.fire({
+            position: 'top-center',
+            icon: 'error',
+            title: 'Произошла ошибка!',
+            showConfirmButton: false,
+            timer: 1500
+          });
+        }
+      })
+      .catch((error) => {
         Swal.fire({
           position: 'top-center',
           icon: 'error',
@@ -72,23 +83,16 @@ callbackFormElement.addEventListener('submit', (evt) => {
           showConfirmButton: false,
           timer: 1500
         });
-      }
-    })
-    .catch((error) => {
-      Swal.fire({
-        position: 'top-center',
-        icon: 'error',
-        title: 'Произошла ошибка!',
-        showConfirmButton: false,
-        timer: 1500
       });
-    });
-});
+  });
+}
 
-ymaps.ready(mapInit);
+if (mapElement) {
+  ymaps.ready(mapInit);
+}
 
 const swiper = new Swiper('.swiper', {
-  loop: true,
+  loop: false,
   slidesPerView: 1,
   navigation: {
     nextEl: '.swiper-nav-buttons__prev',

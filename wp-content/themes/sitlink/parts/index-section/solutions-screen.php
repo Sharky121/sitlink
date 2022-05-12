@@ -33,18 +33,6 @@
           </div>
         </div>
       </div>
-<!--			<ul class="solutions__list">-->
-<!--				<li class="solutions__item solution-card">-->
-<!--					<h3 class="solution-card__title">Квартира</h3>-->
-
-<!--					<a class="solution-card__btn btn btn--primary" href="">-->
-<!--						<span class="btn__text">Заказать</span>-->
-<!--						<svg class="btn__icon" width="20" height="20" aria-hidden="true" focusable="false">-->
-<!--							<use xlink:href="#ico-wifi" x="0" y="0"/>-->
-<!--						</svg>-->
-<!--					</a>-->
-<!--				</li>-->
-<!--			</ul>-->
 		</div>
 	</div>
 </section>

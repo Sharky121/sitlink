@@ -1,0 +1,31 @@
+.market-section-header {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.market-section-header__nav-buttons {
+  margin-left: 15px;
+}
+
+.market-section-header__title {
+  margin: 0;
+
+  font-size: 20px;
+  font-weight: 800;
+  line-height: 1.2;
+}
+
+@include tablet-size {
+
+  .market-section-header__title {
+    font-size: 40px;
+  }
+}
+
+@include desktop-size {
+
+  .market-section-header__title {
+    font-size: 50px;
+  }
+}
